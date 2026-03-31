@@ -49,3 +49,5 @@ npm run preview
 - Simplify (AI; anahtar güvenli şekilde, başarısızlıkta uygulama çalışmaya devam eder)
 
 Kapsam dışı: PDF yükleme, giriş, veritabanı, metin seslendirme, özetleme.
+## Live Demo
+https://effortless-banoffee-dcd703.netlify.app

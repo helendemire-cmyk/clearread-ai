@@ -1,53 +1,63 @@
-# ClearRead AI (MVP)
+📄 README – Problem & Solution
+Problem
 
-Metni disleksi dostu biçimde göstermek ve isteğe bağlı AI ile sadeleştirmek için tek sayfalık bir araç. Ayrıntılı kapsam için `prd.md` dosyasına bakın.
+Disleksi ve okuma güçlüğü yaşayan bireyler, dijital metinleri okumakta ciddi zorluk yaşar.
+Bu durum; metinlerin yoğun yapısı, karmaşık cümleler, düşük görsel okunabilirlik ve standart tasarım yaklaşımlarından kaynaklanır.
 
-## Gereksinimler
+Bu sadece bireysel bir zorluk değil, aynı zamanda bilgiye erişim eşitsizliği yaratan küresel bir problemdir.
+Eğitim materyalleri, web içerikleri ve dijital dokümanlar çoğunlukla nörotipik bireyler için tasarlanır.
 
-- [Node.js](https://nodejs.org/) (LTS önerilir)
+Sonuç olarak:
 
-## Simplify (Gemini) — yerel geliştirme
+Disleksi bireyler daha yavaş okur
+Anlama oranı düşer
+Öğrenme süreci zorlaşır
+Dijital içeriklere erişimde dezavantaj oluşur
 
-Anahtar **yalnızca sunucuda** tutulur; tarayıcıya gönderilmez.
+Bu problem bugün milyonlarca insanı etkileyen gerçek ve sistematik bir erişilebilirlik sorunudur.
 
-1. [Google AI Studio](https://aistudio.google.com/apikey) üzerinden bir API anahtarı alın.
-2. Proje kökünde `.env` oluşturun (`.env.example` dosyasına bakın):
+Solution
 
-   ```bash
-   GEMINI_API_KEY=buraya_anahtariniz
-   ```
+ClearRead AI, dijital metinleri daha okunabilir, anlaşılabilir ve erişilebilir hale getiren bir web uygulamasıdır.
 
-3. `npm run dev` ile çalıştırın. İstekler `POST /api/simplify` üzerinden gider (Vite geliştirme sunucusu bu yolu sunucu tarafında işler).
+Çözüm iki katmandan oluşur:
 
-Üretimde (ör. Vercel) `GEMINI_API_KEY` ortam değişkenini proje ayarlarından ekleyin; `api/simplify.js` sunucusuz fonksiyon olarak çalışır.
+1. Görsel Okuma Desteği (AI bağımsız)
+Disleksi dostu font ve düzen
+Geliştirilmiş satır aralığı ve kontrast
+Bionic Reading ile kelime vurgulama
 
-## Çalıştırma
+Bu katman, kullanıcının metni daha kolay takip etmesini sağlar ve anında etki yaratır.
 
-Proje klasöründe:
+2. AI Destekli Sadeleştirme
+Uzun ve karmaşık cümleleri bölme
+Zor kelimeleri daha basit hale getirme
+Anlamı koruyarak yeniden ifade etme
 
-```bash
-npm install
-npm run dev
-```
+Bu katman, metnin bilişsel yükünü azaltır ve anlamayı kolaylaştırır.
 
-Tarayıcıda gösterilen adresi açın (genelde `http://localhost:5173`).
+Kritik Tasarım Kararı
 
-## Derleme
+ClearRead AI, yapay zekaya tamamen bağımlı değildir.
 
-```bash
-npm run build
-npm run preview
-```
+AI is an enhancement, not a dependency.
 
-`npm run preview` yalnızca statik önizlemedir; `/api/simplify` bu modda yoktur. Tam deneme için `npm run dev` veya Vercel önizlemesi kullanın.
+Yani:
 
-## MVP kapsamı
+AI çalışmasa bile uygulama kullanılabilir
+Görsel okuma desteği her zaman aktif kalır
+Kullanıcı deneyimi kesintiye uğramaz
 
-- Metin girişi ve canlı çıktı
-- Görsel okuma modu (font, aralık, kontrast)
-- Bionic reading (aç/kapat)
-- Simplify (AI; anahtar güvenli şekilde, başarısızlıkta uygulama çalışmaya devam eder)
+Bu yaklaşım, ürünü daha güvenilir ve erişilebilir hale getirir.
 
-Kapsam dışı: PDF yükleme, giriş, veritabanı, metin seslendirme, özetleme.
+Impact
+
+ClearRead AI:
+
+Disleksi bireyler için bilgiye erişimi kolaylaştırır
+Eğitimde fırsat eşitliğine katkı sağlar
+Dijital içerikleri daha kapsayıcı hale getirir
+
+Bu proje, erişilebilirliği artırarak gerçek bir sosyal etki yaratmayı hedefler.
 ## Live Demo
 https://effortless-banoffee-dcd703.netlify.app
